@@ -1,2 +1,136 @@
 git -init
 git remote add origin https://github.com/avferraro001/sampol.git
+
+
+Microsoft Windows [Version 10.0.19044.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin\Desktop\sampol>dir
+ Volume in drive C is OS
+ Volume Serial Number is C87F-EC03
+
+ Directory of C:\Users\Admin\Desktop\sampol
+
+04/04/2022  11:07 A.M.    <DIR>          .
+04/04/2022  11:07 A.M.    <DIR>          ..
+04/04/2022  10:56 A.M.               745 HTML is Structure Only (After).html
+               1 File(s)            745 bytes
+               2 Dir(s)  186,560,765,952 bytes free
+
+C:\Users\Admin\Desktop\sampol>git init
+Initialized empty Git repository in C:/Users/Admin/Desktop/sampol/.git/
+
+C:\Users\Admin\Desktop\sampol>git remote add origin https://github.com/avferraro001/sampol.git
+
+C:\Users\Admin\Desktop\sampol>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HTML is Structure Only (After).html
+        New Text Document.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Admin\Desktop\sampol>git add .
+
+C:\Users\Admin\Desktop\sampol>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   HTML is Structure Only (After).html
+        new file:   New Text Document.txt
+
+
+C:\Users\Admin\Desktop\sampol>git commit -m "sampol commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@LAPTOP-DKVDCQVA.(none)')
+
+C:\Users\Admin\Desktop\sampol>git add .
+
+C:\Users\Admin\Desktop\sampol>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   HTML is Structure Only (After).html
+        new file:   New Text Document.txt
+
+
+C:\Users\Admin\Desktop\sampol>git commit -m "sampol"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@LAPTOP-DKVDCQVA.(none)')
+
+C:\Users\Admin\Desktop\sampol>git config --global user.name "avferraro001"
+
+C:\Users\Admin\Desktop\sampol>git config --global user.email "avferraro001@yahoo.com"
+
+C:\Users\Admin\Desktop\sampol>git commit -m "sampol"
+[master (root-commit) 1b94973] sampol
+ 2 files changed, 20 insertions(+)
+ create mode 100644 HTML is Structure Only (After).html
+ create mode 100644 New Text Document.txt
+
+C:\Users\Admin\Desktop\sampol>git remote -v
+origin  https://github.com/avferraro001/sampol.git (fetch)
+origin  https://github.com/avferraro001/sampol.git (push)
+
+C:\Users\Admin\Desktop\sampol>git add .
+
+C:\Users\Admin\Desktop\sampol>git commit -m "second commit"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Desktop\sampol>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\Admin\Desktop\sampol>git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 765 bytes | 765.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/avferraro001/sampol.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\Admin\Desktop\sampol>git push --set-upstream origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\Admin\Desktop\sampol>git push --set-upstream origin master
