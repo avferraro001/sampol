@@ -1,0 +1,12 @@
+1. git init
+2. git remote add origin https://github.com/your_username/your_repo_name.git
+
+3. git add .
+4. git commit -m "your message"
+5. git push
+
+6. git push --set-upstream origin master
+
+
+browser-sync start --server --files "*"
+
